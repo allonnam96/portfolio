@@ -12,7 +12,7 @@ type Inputs = {
 
 type Props = {};
 
-function ContactMe({}: Props) {
+function ContactMe({ }: Props) {
     const { register, handleSubmit } = useForm<Inputs>();
 
     const onSubmit: SubmitHandler<Inputs> = (formData) => {
@@ -28,8 +28,8 @@ function ContactMe({}: Props) {
             </h3>
             <div className='flex flex-col space-y-10'>
                 <h4 className='text-4xl font-semibold text-center'>
-                    I have got just what you need.{" "}
-                    <span className='decoration-[#1DB954]/50 underline'>Lets Talk.</span>
+                Bridging The Gap Between{" "}
+                    <span className='decoration-[#1DB954]/50 underline'>Ideas And Execution</span>
                 </h4>
 
                 <div className='space-y-10'>
@@ -52,9 +52,7 @@ function ContactMe({}: Props) {
                         <input {...register('name')} placeholder="Name" className="contactInput" type="text" />
                         <input {...register('email')} placeholder="Email" className="contactInput" type='email' />
                     </div>
-
                     <input {...register('subject')} placeholder='Subject' className="contactInput" type='text' />
-
                     <textarea {...register('message')} placeholder='Message' className="contactInput" />
                     <button
                         type='submit'

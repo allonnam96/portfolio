@@ -1,6 +1,21 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import Skill from './Skill'
+import JavaScript from './Skill/Javascript'
+import Python from './Skill/Python'
+import Ruby from './Skill/Ruby'
+import PostgreSQL from './Skill/PostgreSQL'
+import Reacts from './Skill/React'
+import Redux from './Skill/Redux'
+import Node from './Skill/Node'
+import Express from './Skill/Express'
+import MongoDB from './Skill/MongoDB'
+import Rails from './Skill/Rails'
+import Aws from './Skill/Aws'
+import Typescript from './Skill/Typescript'
+import Postman from './Skill/Postman'
+import Html from './Skill/Html'
+import Css from './Skill/Css'
+import Tailwind from './Skill/Tailwind'
 
 type Props = {}
 
@@ -21,20 +36,23 @@ function Skills({ }: Props) {
             </h3>
 
             <div className='grid grid-cols-4 gap-5'>
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
+                <JavaScript />
+                <Ruby />
+                <Typescript />
+                <Python /> 
+                <MongoDB />
+                <Express />
+                <Reacts />
+                <Redux />
+                <Node />
+                <PostgreSQL />
+                <Rails />
+                <Aws />
+                <Postman />
+                <Html />
+                <Css />
+                <Tailwind />
+
             </div>
         </motion.div>
     )

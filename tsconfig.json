@@ -39,7 +39,7 @@
     "portfolio-allon/sanity.config.js",
     "portfolio-allon/sanity.cli.js",
     ".next/types/**/*.ts"
-  ],
+, "components/ExperienceCards/EducationCard1.tsx"  ],
   "exclude": [
     "node_modules"
   ]
