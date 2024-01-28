@@ -2,6 +2,8 @@ import React from 'react'
 import { SocialIcon } from 'react-social-icons'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import resumeIcon from '../_util/icon/resumeIcon.jpg'
+
 
 type Props = {}
 
@@ -30,6 +32,10 @@ export default function Header({ }: Props) {
                     bgColor='transparent'
                 />
                 <SocialIcon url="https://github.com/allonnam96"
+                    fgColor='#1DB954'
+                    bgColor='transparent'
+                />
+                <SocialIcon url="https://docs.google.com/document/d/1PgeByAF4Let4gKjFgdH1JAgRAo5RPI_NNDICs4f68iI/edit"
                     fgColor='#1DB954'
                     bgColor='transparent'
                 />

@@ -1,5 +1,12 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
+import flexportIcon from '../../_util/experienceIcon/Flexport.avif'
+import SQLIcon from '../../_util/experienceSkillsIcon/SQL.svg'
+import MySQLIcon from '../../_util/experienceSkillsIcon/mySql.png'
+import JiraIcon from '../../_util/experienceSkillsIcon/Jira.png'
+import LookerIcon from '../../_util/experienceSkillsIcon/looker.svg'
+import GoogleSheetIcon from '../../_util/experienceSkillsIcon/googleSheet.webp'
 
 type Props = {}
 
@@ -8,7 +15,7 @@ export default function ExperienceCard2({ }: Props) {
         <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 
         w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100
         opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden'>
-            <motion.img
+            <motion.div
                 initial={{
                     y: -100,
                     opacity: 0,
@@ -16,29 +23,49 @@ export default function ExperienceCard2({ }: Props) {
                 transition={{ duration: 1.2 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className='w-32 h-32 rounded-full xl:w-[125px] xl:h-[125px] object-cover object-center'
-                src='https://images.ctfassets.net/92fo1e671z6m/2ejzF1tDsjEvaQeTPkey2c/3f5c0690c86a43955d3d7e4d3528496b/Flexport_Mark_-_alternative_white.png?w=720&h=400&q=50&fm=png'
-                alt=''
-            />
+                className='w-32 h-32 xl:w-[125px] xl:h-[125px] object-cover object-center rounded-full overflow-hidden'
+            >
+                <Image
+                    src={flexportIcon}
+                    alt="Flexport Icon"
+                    width={125}
+                    height={125}
+                />
+            </motion.div>
 
             <div className='px-0 md:px-10'>
                 <h4 className='text-4xl font-light'>Financial Analyst</h4>
                 <p className='font-bold text-2xl mt-1'>Flexport</p>
                 <div className='flex space-x-2 my-2'>
-                    <img className='h-10 w-10 rounded-full'
-                        src='https://www.svgrepo.com/show/331760/sql-database-generic.svg'
+                    <Image
+                        src={SQLIcon}
+                        alt="SQL Icon"
+                        width={35}
+                        className="rounded-full"
                     />
-                    <img className='h-10 w-10 rounded-full'
-                        src='https://pngimg.com/d/mysql_PNG9.png'
+                    <Image
+                        src={MySQLIcon}
+                        alt="MySQL Icon"
+                        width={35}
+                        className="rounded-full"
                     />
-                    <img className='h-10 w-10 rounded-full'
-                        src='https://www.guidecx.com/wp-content/uploads/2023/08/Jira-Icon-Website.png'
+                    <Image
+                        src={JiraIcon}
+                        alt="Jira Icon"
+                        width={35}
+                        className="rounded-full"
                     />
-                    <img className='h-10 w-10 rounded-full'
-                        src='https://www.svgrepo.com/show/354012/looker-icon.svg'
+                    <Image
+                        src={LookerIcon}
+                        alt="Looker Icon"
+                        width={35}
+                        className="rounded-full"
                     />
-                    <img className='h-10 w-10 rounded-full'
-                        src='https://static.vecteezy.com/system/resources/previews/027/179/355/non_2x/google-sheet-spreadsheet-icon-logo-symbol-free-png.png'
+                    <Image
+                        src={GoogleSheetIcon}
+                        alt="GoogleSheet Icon"
+                        width={35}
+                        className="rounded-full"
                     />
                 </div>
                 <p className='uppercase py-5 text-gray-300'>Jul 2021 – Jun 2023</p>

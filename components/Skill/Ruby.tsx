@@ -1,32 +1,40 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image';
+import RubyIcon from '../../_util/skill/Ruby.png'
 
 type Props = {
     directionLeft?: boolean;
 }
 
-function Ruby({directionLeft}: Props) {
-  return (
-    <div className='group relative flex cursor-pointer'>
-        <motion.img
-            initial={{
-                x: directionLeft ? -200 : 200,
-                opacity: 0
-            }}
-            transition={{ duration: 1 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/2048px-Ruby_logo.svg.png'
-            className='rounded-full border border-gray-500 object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32
-            filter group-hover:grayscale transition duration-300 ease-in-out'
-        />
-        <div className='absolute opacity-0 group-hover:opacity-80 transition duration-300
-        ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0'>
-            <div className='flex items-center justify-center h-full'>
-                <p className="text-3xl font-bold text-black opacity-100">95%</p>
+function Css({ directionLeft }: Props) {
+    return (
+        <div className='group relative flex cursor-pointer items-center justify-center'>
+            <motion.div
+                initial={{
+                    x: directionLeft ? -200 : 200,
+                    opacity: 0
+                }}
+                transition={{ duration: 1 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                className='rounded-full border border-gray-500 w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32
+        filter group-hover:grayscale transition duration-300 ease-in-out overflow-hidden flex items-center justify-center' // Centering content
+            >
+                <Image
+                    src={RubyIcon}
+                    alt="Ruby Icon"
+                    width={85}
+                    layout="fixed"
+                />
+            </motion.div>
+            <div className='absolute opacity-0 group-hover:opacity-80 transition duration-300
+    ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0'>
+                <div className='flex items-center justify-center h-full'>
+                    <p className="text-3xl font-bold text-black opacity-100">95%</p>
+                </div>
             </div>
         </div>
-    </div>
-  );
+    );
 }
 
-export default Ruby;
+export default Css;

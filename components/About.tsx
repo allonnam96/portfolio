@@ -1,7 +1,8 @@
 import React from 'react'
 import { motion } from "framer-motion"
 import Image from 'next/image';
-import profilePic2 from '../_util/profilePic1.jpg'
+import profilePic2 from '../_util/profilePic/profilePic1.jpg'
+
 
 type Props = {}
 
@@ -35,6 +36,7 @@ export default function About({ }: Props) {
                 />
             </motion.div>
 
+            <div className='w-full flex space-x-5 overflow-x-scroll p-10'>
             <div className='space-y-10 px-0 md:px-10'>
                 <h4 className='text-4xl font-semibold'>
                     Here Is My {""}
@@ -54,6 +56,7 @@ export default function About({ }: Props) {
                 with enthusiasm and demonstrated adaptability. My portfolio showcases projects that reflect my proficiency 
                 and growth, underscoring my eagerness to contribute meaningfully to innovative software engineering endeavors.
                 </p>
+                </div>
             </div>
         </motion.div>
     )
