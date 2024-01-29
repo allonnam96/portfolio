@@ -16,7 +16,7 @@ const Home: NextPage = () => {
     overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20
     scrollbar-thumb-[#1DB954]/70'>
       <Head>
-        <title>Allon's Portfolio</title>
+        <title>allon-portfolio</title>
       </Head>
 
       <Header />
