@@ -11,18 +11,29 @@ export default function About({ }: Props) {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
-            className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-5 md:px-10 justify-evenly mx-auto items-center'
+            className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'
         >
-            <h3 className='absolute top-24 md:top-0 uppercase tracking-[20px] text-gray-500 text-2xl w-full'>
+            <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
                 About
             </h3>
-            <div className="flex-shrink-0 mt-10 md:mt-20">
+            <motion.div
+                initial={{
+                    x: -200,
+                    opacity: 0
+                }}
+                transition={{
+                    duration: 1.2,
+                }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="flex-shrink-0 mt-20"
+            >
                 <Image
                     src={profilePic2}
                     alt='profile picture'
                     className='w-56 h-56 md:w-64 md:h-64 rounded-full object-cover md:rounded-lg'
                 />
-            </div>
+            </motion.div>
 
             <div className='w-full mt-10 md:mt-0 overflow-x-auto md:overflow-visible'>
                 <div className='space-y-10 px-0 md:px-10'>
@@ -48,3 +59,5 @@ export default function About({ }: Props) {
         </motion.div>
     )
 }
+
+
