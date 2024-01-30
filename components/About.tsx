@@ -9,10 +9,10 @@ export default function About({ }: Props) {
     return (
         <motion.div 
             initial={{ opacity: 0 }}
-            whileInView={{ opacity:1 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
-            className='flex flex-col relative h-screen text-center md:text-left
-            md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'>
+            className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'
+        >
             <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
                 About
             </h3>
@@ -26,12 +26,12 @@ export default function About({ }: Props) {
                 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
+                className="flex-shrink-0 mt-20"
             >
                 <Image
                     src={profilePic2}
                     alt='profile picture'
-                    className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover
-                    md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]'
+                    className='-mb-20 md:mb-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]'
                 />
             </motion.div>
 
@@ -41,7 +41,7 @@ export default function About({ }: Props) {
                         Here Is My&nbsp;
                         <span className='underline decoration-[#1DB954]/50'>Background</span>&nbsp;
                     </h4>
-                    <p className='text-sm text-wrap'>
+                    <p className='text-sm text-wrap overflow-y-auto max-h-96'>
                         I am a graduate of Baruch College&apos;s Zicklin School of Business, 
                         earning a Bachelor of Business Administration (BBA) degree with a 
                         major in Finance and a minor in Real Estate (2020). My experience as a 

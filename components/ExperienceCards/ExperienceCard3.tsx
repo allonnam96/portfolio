@@ -48,7 +48,7 @@ export default function ExperienceCard3({ }: Props) {
                 />
                 </div>
                 <p className='uppercase py-5 text-gray-300'>Sep 2019 - Mar 2021</p>
-                <ul className='list-disc space-y-4 ml-5 text-lg'>
+                <ul className='list-disc space-y-4 ml-5 text-lg overflow-y-auto max-h-96'>
                     <li>Engaged in finance projects such as transferring company expenses from corporate card to SAP Concur</li>
                     <li>Assisted the accounts payable and accounts receivable teams and the payroll department, while also collaborating monthly with the PwC auditing team</li>
                     <li>Curtailed errors exponentially, locating and closing accounts with unnecessary fees while maintaining timely payments and storing data in company internal software</li>
