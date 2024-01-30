@@ -31,8 +31,18 @@ export default function About({ }: Props) {
                         <span className='underline decoration-[#1DB954]/50'>Background</span>&nbsp;
                     </h4>
                     <p className='text-sm text-wrap'>
-                        I am a graduate of Baruch College's Zicklin School of Business, earning a Bachelor of Business Administration (BBA) degree with a major in Finance and a minor in Real Estate (2020). My experience as a Financial Analyst at Flexport, a global trading and technology company, spanning two years, sharpened my expertise in data analytics and nurtured a deep appreciation for the collaborative spirit of software engineering teams. Embracing the opportunity to delve into software engineering, I joined the New York cohort of App Academy in 2023. There, I immersed myself in intensive training, mastering React, Redux, Ruby on Rails, and swiftly adapting to new technologies such as the MERN stack. From crafting engaging games to developing complex projects like a pixel-perfect Spotify clone, I tackled challenges with enthusiasm and demonstrated adaptability. My portfolio showcases projects that reflect my proficiency and growth, underscoring my eagerness to contribute meaningfully to innovative software engineering endeavors.
-                    </p>
+                    I am a graduate of Baruch College&apos;s Zicklin School of Business, 
+                        earning a Bachelor of Business Administration (BBA) degree with a 
+                        major in Finance and a minor in Real Estate (2020). My experience as a 
+                        Financial Analyst at Flexport, a global trading and technology company, 
+                        spanning two years, sharpened my expertise in data analytics and nurtured a 
+                        deep appreciation for the collaborative spirit of software engineering teams. 
+                        Embracing the opportunity to delve into software engineering, I joined the New York 
+                        cohort of App Academy in 2023. There, I immersed myself in intensive training, mastering 
+                        React, Redux, Ruby on Rails, and swiftly adapting to new technologies such as the MERN stack. From crafting 
+                        engaging games to developing complex projects like a pixel-perfect Spotify clone, I tackled challenges 
+                        with enthusiasm and demonstrated adaptability. My portfolio showcases projects that reflect my proficiency 
+                        and growth, underscoring my eagerness to contribute meaningfully to innovative software engineering endeavors.                    </p>
                 </div>
             </div>
         </motion.div>
